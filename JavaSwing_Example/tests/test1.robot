@@ -3,11 +3,11 @@ Library  SwingLibrary
 Suite Setup  Start Test Application
 
 *** Test Cases ***
-#Test Show It
-#    Select Window  DialogDemo
-#    Push Button  Show it!
-#    Select Dialog  Message
-#    Push Button  OK
+Test Show It
+    Select Window  DialogDemo
+    Push Button  Show it!
+    Select Dialog  Message
+    Push Button  OK
 
 Test Custom Dialog
     Select Window  DialogDemo
