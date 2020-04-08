@@ -12,12 +12,20 @@ Test Show It
 Test Custom Dialog
     Select Window  DialogDemo
     Select Tab As Context  More Dialogs
-    Sleep  1
     Push Radio Button  Input-validating dialog (with custom message area)
-    Sleep  1
     Push Button  Show it!
     Select Dialog  Quiz
-    List Components In Context
+    Type Into Text Field  0  Testing...
+    Push Button  Enter
+    Select Dialog  Try again
+    Push Button  OK
+    Select Dialog  Quiz
+    Clear Text Field  0
+    Type Into Text Field  0  GEISEL
+    Sleep  1
+    Push Button  Enter
+    Select Window  DialogDemo
+    Label Text Should Be  3  Congratulations! You entered "GEISEL".
 
 *** Keywords ***
 Start Test Application
